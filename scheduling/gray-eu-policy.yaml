@@ -1,14 +1,16 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: SchedulingPolicy
 metadata:
-  name: gray-policy
+  name: gray-eu-policy
 spec:
   deploymentTargetSelector:
     workspace: kaizen-team
     labelSelector:
       matchLabels:
         zone: gray
+        location: eu
   clusterTypeSelector:
     labelSelector: 
       matchLabels:
         zone: gray
+        location: eu
