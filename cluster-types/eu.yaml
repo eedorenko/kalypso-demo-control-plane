@@ -4,7 +4,7 @@ metadata:
   name: eu
   labels: 
     region: eu
-    zone: gray
+    zone: red
 spec:
   reconciler: arc-flux
   namespaceService: default
