@@ -6,7 +6,7 @@ metadata:
     type: service
 spec:
   workload:
-    repo: https://github.com/microsoft/kalypso-svc-src
+    repo: https://github.com/eedorenko/kalypso-demo-svc-src
     branch: main
     path: ./workloads
   workspace: platform-team
