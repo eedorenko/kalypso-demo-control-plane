@@ -8,5 +8,5 @@ spec:
   workload:
     repo: https://github.com/eedorenko/hello-world
     branch: main
-    path: ./workloads
+    path: ./workload
   workspace: kaizen-team
