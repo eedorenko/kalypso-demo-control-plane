@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dev-config
+  labels:
+     platform-config: "true"
+data:
+  ENVIRONMENT: Dev
+  SOME_COMMON_ENVIRONMENT_VARIABLE: "false"

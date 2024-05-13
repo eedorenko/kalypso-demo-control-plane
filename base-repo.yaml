@@ -1,0 +1,9 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: BaseRepo
+metadata:
+  name: main
+spec:
+  repo: https://github.com/microsoft/kalypso-control-plane
+  branch: main
+  path: .
+  commit: 5523a85f37d12c0c7c10ab6616644db089fcd6f7
