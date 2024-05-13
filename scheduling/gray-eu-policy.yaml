@@ -13,4 +13,4 @@ spec:
     labelSelector: 
       matchLabels:
         zone: gray
-        location: eu
+        region: eu
