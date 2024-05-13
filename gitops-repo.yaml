@@ -3,7 +3,7 @@ kind: GitOpsRepo
 metadata:
   name: dev
 spec:
-  repo: https://github.com/microsoft/kalypso-gitops
+  repo: https://github.com/eedorenko/kalypso-demo-gitops
   branch: dev
   path: .
 
