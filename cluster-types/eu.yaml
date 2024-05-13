@@ -2,6 +2,7 @@ apiVersion: scheduler.kalypso.io/v1alpha1
 kind: ClusterType
 metadata:
   name: eu
+  labels: 
     region: eu
     zone: gray
 spec:
