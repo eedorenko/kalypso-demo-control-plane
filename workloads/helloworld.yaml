@@ -6,7 +6,7 @@ metadata:
     type: application
 spec:
   workload:
-    repo: https://github.com/eedorenko/helloworld
+    repo: https://github.com/eedorenko/hello-world
     branch: main
     path: ./workloads
   workspace: kaizen-team
