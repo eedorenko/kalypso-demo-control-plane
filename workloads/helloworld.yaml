@@ -1,12 +1,12 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: WorkloadRegistration
 metadata:
-  name: platform-svc
+  name: helloworld
   labels:
-    type: service
+    type: application
 spec:
   workload:
-    repo: https://github.com/eedorenko/kalypso-demo-svc-src
+    repo: https://github.com/eedorenko/helloworld
     branch: main
     path: ./workloads
-  workspace: platform-team
+  workspace: kaizen-team
