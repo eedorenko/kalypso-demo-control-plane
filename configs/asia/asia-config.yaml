@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: asia-config
+  labels:
+     platform-config: "true"
+     region: asia
+data:
+  REGION: Asia
+  DATABASE_URL: mysql://asia-host:3306/mysqlrty123
+  
+
+  
+  

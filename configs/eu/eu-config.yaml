@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: eu-config
+  labels:
+     platform-config: "true"
+     region: eu
+data:
+  REGION: EU
+  DATABASE_URL: mysql://eu-host:3306/mysqlrty123
+  
+
+  
+  

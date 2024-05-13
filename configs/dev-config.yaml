@@ -7,3 +7,4 @@ metadata:
 data:
   ENVIRONMENT: Dev
   SOME_COMMON_ENVIRONMENT_VARIABLE: "false"
+  CLUSTER_NAME: Factory Cluster

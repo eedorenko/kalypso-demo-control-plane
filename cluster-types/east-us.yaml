@@ -1,10 +1,11 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: ClusterType
 metadata:
-  name: command-center
+  name: east-us
   labels: 
     region: east-us
-    restricted: "true"
+    country: us
+    zone: gray    
 spec:
   reconciler: arc-flux
   namespaceService: default

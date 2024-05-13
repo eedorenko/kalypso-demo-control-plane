@@ -1,0 +1,14 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: SchedulingPolicy
+metadata:
+  name: red-policy
+spec:
+  deploymentTargetSelector:
+    workspace: kaizen-team
+    labelSelector:
+      matchLabels:
+        zone: red
+  clusterTypeSelector:
+    labelSelector: 
+      matchLabels:
+        zone: red

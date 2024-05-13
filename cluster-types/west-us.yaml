@@ -1,10 +1,11 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: ClusterType
 metadata:
-  name: large
+  name: west-us
   labels: 
     region: west-us
-    size: large
+    country: us    
+    zone: green
 spec:
   reconciler: arc-flux
   namespaceService: default

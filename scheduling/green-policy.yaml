@@ -1,14 +1,14 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: SchedulingPolicy
 metadata:
-  name: observability-policy
+  name: green-policy
 spec:
   deploymentTargetSelector:
-    workspace: platform-team
+    workspace: kaizen-team
     labelSelector:
       matchLabels:
-        stack: observability
+        zone: green
   clusterTypeSelector:
     labelSelector: 
       matchLabels:
-        size: large
+        zone: green
