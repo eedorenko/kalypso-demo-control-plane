@@ -5,7 +5,7 @@ metadata:
   labels: 
     region: east-us
     country: us
-    zone: gray    
+    zone: green
 spec:
   reconciler: arc-flux
   namespaceService: default
