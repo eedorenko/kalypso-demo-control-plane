@@ -31,6 +31,6 @@ spec:
         targetNamespace: "{{ .Namespace}}"
         sourceRef:
           kind: GitRepository
-          name: "{{ .DeploymentTargetName}}"
+          name: {{ .Environment}}.{{ .Workspace}}.{{ index .Labels "application"}}.{{ .DeploymentTargetName}}.{{ .ClusterType}}
         path: "{{ .Manifests.path}}" 
         prune: true
