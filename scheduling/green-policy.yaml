@@ -11,4 +11,4 @@ spec:
   clusterTypeSelector:
     labelSelector: 
       matchLabels:
-        zone: green
+        zone: gray
