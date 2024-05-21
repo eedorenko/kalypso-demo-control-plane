@@ -4,7 +4,6 @@ metadata:
   name: gray-east-us-policy
 spec:
   deploymentTargetSelector:
-    workspace: kaizen-team
     labelSelector:
       matchLabels:
         zone: gray
