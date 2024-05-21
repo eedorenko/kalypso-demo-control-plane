@@ -10,6 +10,7 @@ Refer to the full list of abstractions in the [Kalypso Scheduler](https://github
 
 ## Repository structure
 
+
 The *Control Plane* repository contains two types of data:
 
 - The data that is about to be promoted across environments. It lives in *main* branch and consists of:
