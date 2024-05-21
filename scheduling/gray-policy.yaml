@@ -1,9 +1,10 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: SchedulingPolicy
 metadata:
-  name: green-policy
+  name: gray-policy
 spec:
   deploymentTargetSelector:
+    workspace: demo-team
     labelSelector:
       matchLabels:
         zone: gray
