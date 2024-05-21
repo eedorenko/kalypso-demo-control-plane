@@ -1,7 +1,7 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: SchedulingPolicy
 metadata:
-  name: green-policy
+  name: green-gray-policy
 spec:
   deploymentTargetSelector:
     labelSelector:
@@ -10,4 +10,4 @@ spec:
   clusterTypeSelector:
     labelSelector: 
       matchLabels:
-        zone: green
+        zone: gray

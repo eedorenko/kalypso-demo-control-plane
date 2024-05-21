@@ -3,8 +3,7 @@ kind: SchedulingPolicy
 metadata:
   name: red-policy
 spec:
-  deploymentTargetSelector:
-    workspace: kaizen-team
+  deploymentTargetSelector:    
     labelSelector:
       matchLabels:
         zone: red
