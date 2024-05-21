@@ -17,3 +17,5 @@ spec:
           workload: "{{ .Workload}}"
           deploymentTarget: "{{ .DeploymentTargetName}}"
           someLabel: some-value
+        annotations:
+          scheduler.alpha.kubernetes.io/node-selector: environment={{ .Environment}}          
