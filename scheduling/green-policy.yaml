@@ -4,7 +4,6 @@ metadata:
   name: green-policy
 spec:
   deploymentTargetSelector:
-    workspace: kaizen-team
     labelSelector:
       matchLabels:
         zone: green
