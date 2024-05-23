@@ -12,5 +12,5 @@ spec:
       matchLabels:
         zone: red
       matchExpressions:
-        - {key: region, operator: In, values: [asia]}        
+        - {key: region, operator: NotIn, values: [asia]}        
           
