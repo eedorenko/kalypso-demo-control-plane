@@ -11,6 +11,3 @@ spec:
     labelSelector: 
       matchLabels:
         zone: red
-      matchExpressions:
-        - {key: region, operator: NotIn, values: [asia]}        
-          
