@@ -11,3 +11,4 @@ spec:
     labelSelector: 
       matchLabels:
         zone: red
+        region: eu
