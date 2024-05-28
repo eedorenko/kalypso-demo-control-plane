@@ -7,7 +7,6 @@ spec:
     labelSelector:
       matchLabels:
         zone: red
-        application: control-tower
   clusterTypeSelector:
     labelSelector: 
       matchLabels:
