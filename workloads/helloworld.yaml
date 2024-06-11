@@ -4,6 +4,7 @@ metadata:
   name: helloworld
   labels:
     type: application
+    why: demo
 spec:
   workload:
     repo: https://github.com/eedorenko/hello-world
