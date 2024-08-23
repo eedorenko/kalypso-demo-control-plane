@@ -1,0 +1,13 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: WorkloadRegistration
+metadata:
+  name: tacosburritos
+  labels:
+    type: ml-model
+    why: demo
+spec:
+  workload:
+    repo: https://github.com/eedorenko/mlops-gitops
+    branch: main
+    path: ./workload
+  workspace: kaizen-team
