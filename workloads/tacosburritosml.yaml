@@ -10,4 +10,4 @@ spec:
     repo: https://github.com/eedorenko/mlops-gitops
     branch: main
     path: ./workload
-  workspace: kaizen-team
+  workspace: dm
