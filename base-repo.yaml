@@ -6,4 +6,4 @@ spec:
   repo: https://github.com/eedorenko/kalypso-demo-control-plane
   branch: main
   path: .
-  commit: aa0c9d7b28a6439769d5ff4af8b89509db08922a
+  commit: 56fd9dc998cdee740e48ff055f36fa6c0ad88f4a
