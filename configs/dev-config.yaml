@@ -5,6 +5,6 @@ metadata:
   labels:
      platform-config: "true"
 data:
-  ENVIRONMENT: Dev1
+  ENVIRONMENT: Dev
   SOME_COMMON_ENVIRONMENT_VARIABLE: "true"
   CLUSTER_NAME: Factory Cluster
