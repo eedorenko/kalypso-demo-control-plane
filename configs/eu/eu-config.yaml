@@ -7,7 +7,7 @@ metadata:
      region: eu
 data:
   REGION: EU
-  DATABASE_URL: mysql://eu-host:3306/mysqlrty123
+  DATABASE_URL: mysql://eu-db-host:3308/mysqlrty
   
 
   
