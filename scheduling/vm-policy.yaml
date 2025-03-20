@@ -1,0 +1,13 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: SchedulingPolicy
+metadata:
+  name: vm-policy
+spec:
+  deploymentTargetSelector:
+    labelSelector:
+      matchLabels:
+        host: linux
+  clusterTypeSelector:
+    labelSelector: 
+      matchLabels:
+        type: vm
