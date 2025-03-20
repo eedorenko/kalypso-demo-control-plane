@@ -1,0 +1,11 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: ClusterType
+metadata:
+  name: vm
+  labels: 
+    region: west-us
+    type: vm
+spec:
+  reconciler: ansible
+  namespaceService: ansible-user
+  configType: envFile
