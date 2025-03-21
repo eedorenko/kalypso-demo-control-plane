@@ -1,6 +1,6 @@
 kind: Template
 metadata:
-  name: configmap
+  name: envFile
 spec:
   type: config
   manifests:
