@@ -1,1 +1,3 @@
+{{range $h := .ConfigData.platformServices}}
 
+{{end}}           
