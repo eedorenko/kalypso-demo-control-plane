@@ -5,6 +5,6 @@ spec:
   type: config
   manifests:
     - |
-    {{range $key, $value := .ConfigData}}
-    export $key=$value
-    {{end}}           
+      {{range $key, $value := .ConfigData}}
+      export $key=$value
+      {{end}}           
