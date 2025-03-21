@@ -8,5 +8,5 @@ spec:
   manifests:
     - |
       {{range $key, $value := .ConfigData}}
-      export $key=$value
+      export {{ $key }}={{ $value }}
       {{end}}           
