@@ -4,7 +4,7 @@ metadata:
   name: vm
   labels: 
     region: west-us
-    country: ua
+    country: us
     type: vm
 spec:
   reconciler: ansible
