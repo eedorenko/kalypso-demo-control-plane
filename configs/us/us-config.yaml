@@ -6,4 +6,4 @@ metadata:
      platform-config: "true"
      country: us
 data:
-  DATABASE_URL: mysql://us-host:3306/mysqlrty123
+  DATABASE_URL: mysql://us-host:3306/mysqlrty1234
