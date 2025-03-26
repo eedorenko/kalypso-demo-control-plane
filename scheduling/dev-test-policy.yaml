@@ -1,13 +1,13 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: SchedulingPolicy
 metadata:
-  name: gray-policy
+  name: dev-test-policy
 spec:
   deploymentTargetSelector:
     labelSelector:
       matchLabels:
-        zone: gray
+        purpose: dev-test
   clusterTypeSelector:
     labelSelector: 
       matchLabels:
-        zone: gray
+        country: us
