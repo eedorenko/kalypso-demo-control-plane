@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: stage-config
+  name: prod-config
   labels:
      platform-config: "true"
 data:
-  ENVIRONMENT: Stage
+  ENVIRONMENT: Prod
   SOME_COMMON_ENVIRONMENT_VARIABLE: "false"
   CLUSTER_NAME: Factory Cluster
