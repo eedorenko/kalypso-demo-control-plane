@@ -3,8 +3,7 @@ kind: ClusterType
 metadata:
   name: asia
   labels: 
-    region: asia
-    zone: red
+    region: asia  
 spec:
   reconciler: arc-flux
   namespaceService: default
