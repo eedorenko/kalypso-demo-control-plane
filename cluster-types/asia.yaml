@@ -4,7 +4,6 @@ metadata:
   name: asia
   labels: 
     region: asia
-    zone: red
 spec:
   reconciler: arc-flux
   namespaceService: default
