@@ -3,8 +3,7 @@ kind: ClusterType
 metadata:
   name: vm
   labels: 
-    region: west-us
-    country: us
+    region: north
     type: vm
 spec:
   reconciler: ansible
