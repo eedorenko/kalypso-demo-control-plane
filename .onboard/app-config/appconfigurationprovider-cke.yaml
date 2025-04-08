@@ -1,0 +1,14 @@
+apiVersion: azconfig.io/v1
+kind: AzureAppConfigurationProvider
+metadata:
+  name: appconfigurationprovider-cke
+  namespace: azappconfig-system
+spec:
+  endpoint: https://hello-world-app-config.azconfig.io
+  target:
+    configMapName: configmap-created-by-appconfig-provider
+  auth:
+    managedIdentityClientId: 60192c8d-403d-4d9d-adcc-19eed57abd76
+  configuration:
+      selectors:
+        - keyFilter: brand-cke*
