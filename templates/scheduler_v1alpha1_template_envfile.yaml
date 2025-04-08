@@ -1,0 +1,12 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: Template
+metadata:
+  name: env-file
+spec:
+  type: config
+  contentType: sh
+  manifests:
+    - |
+      {{range $key, $value := .ConfigData}}
+      export {{ $key }}={{ $value | quote}}
+      {{end}}           

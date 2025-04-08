@@ -1,12 +1,12 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: WorkloadRegistration
 metadata:
-  name: controltower
+  name: greeting
   labels:
-    type: application
+    type: application  
 spec:
   workload:
-    repo: https://github.com/eedorenko/control-tower
+    repo: https://github.com/kaizentm/kalypso-app-src    
     branch: main
     path: ./workload
-  workspace: demo-team
+  workspace: kaizen-team
