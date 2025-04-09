@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: entree-detection-config
+  name: entree-detection-platform-config
   labels:
      platform-config: "true"
      task: entree-detection
