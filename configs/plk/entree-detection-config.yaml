@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: entree_detection-config
+  name: entree-detection-config
   labels:
-     task: entree_detection
+     task: entree-detection
      brand: plk
 data:
   task_type: object_detection
