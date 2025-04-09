@@ -4,10 +4,10 @@ metadata:
   name: plk
   labels: 
     brand: plk
-    people_detection: "true"
-    entree_detection: "true"
-    side_detection: "true"
-    side_inventory_estimation: "true"
+    people-detection: "true"
+    entree-detection: "true"
+    side-detection: "true"
+    side-inventory-estimation: "true"
 spec:
   reconciler: arc-flux
   namespaceService: default
