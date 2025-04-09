@@ -6,7 +6,6 @@ metadata:
      task: entree_detection
      brand: plk
 data:
-    # Is it app config? -----  
   task_type: object_detection
   model_class_mapping: |
           {0: raw_chicken_wing, 1:raw_chicken_thigh,
@@ -18,7 +17,6 @@ data:
   worker_tracker_name: norfair
   worker_tracker_distance_function: "kou"
   worker_tracker_distance_threshold: "0.75"
-  # -----------------------  
   worker_cameras: |
     ["centerpost_rear"]
   worker_zones: |
