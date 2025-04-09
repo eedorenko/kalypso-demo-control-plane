@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: burger-detection-config
   labels:
+     platform-config: "true"
      task: burger-detection
      brand: cke
 data:
