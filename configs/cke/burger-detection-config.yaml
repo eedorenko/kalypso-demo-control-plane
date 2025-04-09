@@ -4,6 +4,7 @@ metadata:
   name: burger-detection-config
   labels:
      task: burger-detection
+     brand: cke
 data:
   # Is it app config? -----  
   task_type: object_detection
@@ -19,7 +20,7 @@ data:
     ["packaging1"]
   worker_zones: |
     ["packaging1/assembly_table"]
-  worker/zones/zone_boundary_threshold: "5 pixels"
-  worker/zones/rentry_buffer_time: "2s"
+  worker_zones_zone_boundary_threshold: "5 pixels"
+  worker_zones_rentry_buffer_time: "2s"
 
     
