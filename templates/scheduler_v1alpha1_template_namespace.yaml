@@ -17,5 +17,41 @@ spec:
           workload: "{{ .Workload}}"
           deploymentTarget: "{{ .DeploymentTargetName}}"
           someLabel: some-value
-        annotations:
-          scheduler.alpha.kubernetes.io/node-selector: environment={{ .Environment}}          
+    - |
+      apiVersion: v1
+      kind: ServiceAccount
+      metadata:
+        name: "{{ .Workload}}-sa"
+        namespace: "{{ .Namespace}}"
+      {{if .ConfigData.imagePullSecrets }}
+      imagePullSecrets:
+      - name: {{ .ConfigData.imagePullSecrets }}
+      {{end}}
+    - |
+      apiVersion: v1
+      kind: LimitRange
+      metadata:
+        name: pvc-limit-range
+        namespace: "{{ .Namespace}}"
+        labels:
+          environment: "{{ .Environment}}"
+          workload: "{{ .Workload}}"
+      spec:
+        limits:
+        - max:
+            storage: 64Gi
+          min:
+            storage: 1Gi
+          type: PersistentVolumeClaim
+    - |
+      apiVersion: v1
+      kind: ResourceQuota
+      metadata:
+        name: pvc-resource-quota
+        namespace: "{{ .Namespace}}"
+        labels:
+          environment: "{{ .Environment}}"
+          workload: "{{ .Workload}}"
+      spec:
+        hard:
+          requests.storage: 64Gi
