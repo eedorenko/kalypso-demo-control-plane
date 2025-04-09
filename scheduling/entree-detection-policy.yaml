@@ -10,4 +10,4 @@ spec:
   clusterTypeSelector:
     labelSelector: 
       matchLabels:
-        burger-detection: "true"
+        entree-detection: "true"
