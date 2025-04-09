@@ -11,3 +11,5 @@ spec:
   reconciler: arc-flux
   namespaceService: default
   configType: configmap
+
+  
