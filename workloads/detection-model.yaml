@@ -10,5 +10,5 @@ spec:
     repo: https://github.com/eedorenko/mlops-gitops
     branch: main
     path: ./workload
-  workspace: dt
+  workspace: demo-team
   
