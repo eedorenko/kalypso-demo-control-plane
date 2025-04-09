@@ -1,9 +1,9 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: Environment
 metadata:
-  name: newenv
+  name: prod
 spec:
   controlPlane:
     repo: https://github.com/eedorenko/kalypso-demo-control-plane
-    branch: newenv
+    branch: prod
     path: .
