@@ -1,7 +1,7 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: WorkloadRegistration
 metadata:
-  name: tacosburritos
+  name: detection-model
   labels:
     type: ml-model
     why: demo
