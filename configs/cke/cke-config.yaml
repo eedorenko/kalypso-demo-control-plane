@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: west-us-config
+  name: cke-config
   labels:
      platform-config: "true"
-     region: west-us
+     brand: cke
 data:
-  REGION: West US
+  brand_id: cke
+  vision_dayparts: "breakfast: 8AM - 10AM"
+
   
 
   

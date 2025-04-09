@@ -1,10 +1,12 @@
 apiVersion: scheduler.kalypso.io/v1alpha1
 kind: ClusterType
 metadata:
-  name: asia
+  name: cke
   labels: 
-    region: asia
-    zone: red
+    brand: cke
+    people_detection: "true"
+    burger_detection: "true"
+    fry_warmer_estimation: "true"
 spec:
   reconciler: arc-flux
   namespaceService: default

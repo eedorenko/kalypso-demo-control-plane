@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: entree_detection-config
+  labels:
+     task: entree_detection
+data:
+    # Is it app config? -----  
+  task_type: object_detection
+  model_class_mapping: |
+          {0: raw_chicken_wing, 1:raw_chicken_thigh,
+          2:raw_chicken_drum, 3:raw_chicken_breast, 
+          4: cooked_chicken_wing, 5: cooked_chicken_thigh, 
+          6: cooked_chicken_drum, 7:cooked_chicken_breast)
+  model_confidence_threshold: "0.65"
+  worker_operating_fps: "6"
+  worker_tracker: norfair
+  worker_tracker_distance_function: "kou"
+  worker_tracker_distance_threshold: "0.75"
+  # -----------------------  
+  worker_cameras: |
+    ["centerpost_rear"]
+  worker_zones: |
+    ["centerpost_rear/chicken_trays", "center_post_rear/table"]
+  worker/zones/zone_boundary_threshold: "5 pixels"
+  worker/zones/rentry_buffer_time: "2s"
+
+    

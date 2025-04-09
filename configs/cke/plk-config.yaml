@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: east-us-config
+  name: plk-config
   labels:
      platform-config: "true"
-     region: east-us
+     brand: plk
 data:
-  REGION: East US
+  brand_id: plk
+  vision_dayparts: "lunch: 11AM - 1PM"
+
   
 
   

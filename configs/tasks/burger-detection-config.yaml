@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: burger-detection-config
+  labels:
+     task: burger-detection
+data:
+  # Is it app config? -----  
+  task_type: object_detection
+  model_class_mapping: "{0:patty, 1:in_progress, 2:completed_burger, 3:packaged_burger}"
+  model_confidence_threshold: "0.75"
+  worker_operating_fps: "6"
+  worker_tracker: norfair
+  worker_tracker_distance_function: "kou"
+  worker_tracker_distance_threshold: "0.75"
+  worker/object_inactivity_threshold: "120s"
+  # -----------------------  
+  worker_cameras: |
+    ["packaging1"]
+  worker_zones: |
+    ["packaging1/assembly_table"]
+  worker/zones/zone_boundary_threshold: "5 pixels"
+  worker/zones/rentry_buffer_time: "2s"
+
+    
