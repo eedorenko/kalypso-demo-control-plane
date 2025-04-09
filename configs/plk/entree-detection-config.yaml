@@ -19,9 +19,9 @@ data:
   worker_tracker_distance_function: "kou"
   worker_tracker_distance_threshold: "0.75"
   worker_cameras: |
-    ["centerpost_rear"]
+    '["centerpost_rear"]'
   worker_zones: |
-    ["centerpost_rear/chicken_trays", "center_post_rear/table"]
+    '["centerpost_rear/chicken_trays", "center_post_rear/table"]'
   worker_zones_zone_boundary_threshold: "5 pixels"
   worker_zones_rentry_buffer_time: "2s"
 

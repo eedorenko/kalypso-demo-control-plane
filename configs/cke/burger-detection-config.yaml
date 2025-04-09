@@ -17,9 +17,9 @@ data:
   worker_tracker_distance_threshold: '0.75'
   worker_object_inactivity_threshold: '120s'
   worker_cameras: |
-    ["packaging1"]
+    '["packaging1"]'
   worker_zones: |
-    ["packaging1/assembly_table"]
+    '["packaging1/assembly_table"]'
   worker_zones_zone_boundary_threshold: "5 pixels"
   worker_zones_rentry_buffer_time: "2s"
 
