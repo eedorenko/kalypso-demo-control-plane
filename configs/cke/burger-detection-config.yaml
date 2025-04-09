@@ -14,7 +14,7 @@ data:
   worker_tracker_name: norfair
   worker_tracker_distance_function: "kou"
   worker_tracker_distance_threshold: "0.75"
-  worker/object_inactivity_threshold: "120s"
+  worker-object_inactivity_threshold: "120s"
   worker_cameras: |
     ["packaging1"]
   worker_zones: |
