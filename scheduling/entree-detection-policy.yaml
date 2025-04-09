@@ -1,0 +1,13 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: SchedulingPolicy
+metadata:
+  name: entree-detection-policy
+spec:
+  deploymentTargetSelector:
+    labelSelector:
+      matchLabels:
+        task: entree-detection
+  clusterTypeSelector:
+    labelSelector: 
+      matchLabels:
+        burger-detection: "true"
