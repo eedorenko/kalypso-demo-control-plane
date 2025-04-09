@@ -4,9 +4,9 @@ metadata:
   name: cke
   labels: 
     brand: cke
-    people_detection: "true"
-    burger_detection: "true"
-    fry_warmer_estimation: "true"
+    people-detection: "true"
+    burger-detection: "true"
+    fry-warmer-estimation: "true"
 spec:
   reconciler: arc-flux
   namespaceService: default
