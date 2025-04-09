@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: entree-detection-config
   labels:
+     platform-config: "true"
      task: entree-detection
      brand: plk
 data:
