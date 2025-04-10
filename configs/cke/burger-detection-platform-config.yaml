@@ -9,7 +9,7 @@ metadata:
 data:
   task_type: object_detection
   model_class_mapping: |
-    "{0:patty, 1:in_progress, 2:completed_burger, 3:packaged_burger}"
+    '{0:patty, 1:in_progress, 2:completed_burger, 3:packaged_burger}''
   model_confidence_threshold: '0.75'
   worker_operating_fps: '6'
   worker_tracker_name: norfair
