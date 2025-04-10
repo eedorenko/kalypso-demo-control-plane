@@ -13,7 +13,7 @@ data:
   model_confidence_threshold: "0.65"
   worker_operating_fps: "6"
   worker_tracker_name: norfair
-  worker_tracker_distance_function: "kou"
+  worker_tracker_distance_function: "kou1"
   worker_tracker_distance_threshold: "0.75"
   worker_cameras: |
     '["centerpost_rear"]'
