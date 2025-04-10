@@ -8,7 +8,7 @@ metadata:
      brand: plk
 data:
   task_type: object_detection
-  model_class_mapping: |
+  model_class_mapping: |+
     "{0: raw_chicken_wing, 1:raw_chicken_thigh, 2:raw_chicken_drum,
      3:raw_chicken_breast, 4: cooked_chicken_wing, 5: cooked_chicken_thigh, 
      6: cooked_chicken_drum, 7:cooked_chicken_breast}"
