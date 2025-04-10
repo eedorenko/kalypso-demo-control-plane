@@ -1,0 +1,15 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: ClusterType
+metadata:
+  name: plk-union-square
+  labels: 
+    brand: plk
+    store: union-square
+    people-detection: "true"
+    entree-detection: "true"
+    side-detection: "true"
+    side-inventory-estimation: "true"
+spec:
+  reconciler: arc-flux
+  namespaceService: default
+  configType: configmap
