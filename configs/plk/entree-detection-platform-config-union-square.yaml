@@ -9,7 +9,7 @@ metadata:
      brand: plk
 data:
   worker_cameras: |
-    '["centerpost_front1"]'
+    '["centerpost_front"]'
   worker_zones: |
     '["centerpost_front/chicken_trays", "center_post_front/table"]'
   worker_zones_zone_boundary_threshold: "8 pixels"
