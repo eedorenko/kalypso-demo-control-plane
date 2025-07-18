@@ -74,6 +74,8 @@ spec:
       {{ toYaml .ConfigData.keyVaultSecrets | indent 10}}
           tenantID: "{{ .ConfigData.azureTenantId}}"
     - |
+      {{if .ConfigData.secretObjects }}
+      {{range $h := .ConfigData.secretObjects}}
       apiVersion: secret-sync.x-k8s.io/v1alpha1
       kind: SecretSync
       metadata:
@@ -82,7 +84,9 @@ spec:
       spec:
         serviceAccountName: "{{ .Workload}}-sa"
         secretProviderClassName: "{{ .Workload}}-spc"
-      {{if .ConfigData.secretObjects }}
-        secretObjects:
-      {{ toYaml .ConfigData.secretObjects | indent 4}}
+        secretObject:
+        type: "{{ $h.type}}"
+        data: 
+      {{ toYaml $h.data | indent 4}}
+      {{end}}  
       {{end}}
