@@ -1,0 +1,13 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: SchedulingPolicy
+metadata:
+  name: eu-dev-test-policy
+spec:
+  deploymentTargetSelector:
+    labelSelector:
+      matchLabels:
+        purpose: dev-test
+  clusterTypeSelector:
+    labelSelector: 
+      matchLabels:
+        region: eu
