@@ -55,3 +55,34 @@ spec:
       spec:
         hard:
           requests.storage: 64Gi
+    - |
+      apiVersion: secrets-store.csi.x-k8s.io/v1
+      kind: SecretProviderClass
+      metadata:
+        name: "{{ .Workload}}-spc"
+        namespace: "{{ .Namespace}}"
+        labels:
+          environment: "{{ .Environment}}"
+          workload: "{{ .Workload}}"
+      spec:
+        provider: azure
+
+        parameters:
+          keyvaultName: "{{ .ConfigData.keyvaultName}}"
+          objects: |
+            array:
+      {{ toYaml .ConfigData.keyVaultSecrets | indent 10}}
+          tenantID: "{{ .ConfigData.azureTenantId}}"
+    - |
+      apiVersion: secret-sync.x-k8s.io/v1alpha1
+      kind: SecretSync
+      metadata:
+        name: "{{ .Workload}}-secret-sync"
+        namespace: "{{ .Namespace}}"
+      spec:
+        serviceAccountName: "{{ .Workload}}-sa"
+        secretProviderClassName: "{{ .Workload}}-spc"
+      {{if .ConfigData.secretObjects }}
+        secretObjects:
+      {{ toYaml .ConfigData.secretObjects | indent 4}}
+      {{end}}
