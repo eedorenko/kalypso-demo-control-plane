@@ -8,6 +8,8 @@ metadata:
 data:
   REGION: EU
   DATABASE_URL: mysql://eu-db-host:3308/mysql
+  keyvaultName: ansible-secret-key-vault
+  azureTenantId: 16b3c013-d300-468d-ac64-7eda0820b6d3
   secretObjects: |
           - secretName: application-secret
             type: Opaque
