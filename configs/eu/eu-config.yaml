@@ -9,6 +9,7 @@ data:
   REGION: EU
   DATABASE_URL: mysql://eu-db-host:3308/mysql
   keyvaultName: ansible-secret-key-vault
+  managedIdentityId: 332f57f9-6de8-4929-ad1e-f1f3015ee0ae
   azureTenantId: 16b3c013-d300-468d-ac64-7eda0820b6d3
   secretObjects: |
           - type: Opaque
