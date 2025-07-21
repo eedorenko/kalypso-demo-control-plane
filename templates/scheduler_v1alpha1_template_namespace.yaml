@@ -83,8 +83,8 @@ spec:
       apiVersion: secret-sync.x-k8s.io/v1alpha1
       kind: SecretSync
       metadata:
-        name: "{{ $name }}"
-        namespace: {{ $namespace }}"
+        name: {{ $name }}
+        namespace: {{ $namespace }}
       spec:
         serviceAccountName: "{{ $serviceAccountName }}"
         secretProviderClassName: "{{ $secretProviderClassName }}"
