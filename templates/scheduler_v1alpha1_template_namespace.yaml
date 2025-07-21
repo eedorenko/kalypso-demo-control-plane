@@ -65,9 +65,9 @@ spec:
           environment: "{{ .Environment}}"
           workload: "{{ .Workload}}"
       spec:
-        provider: azure
-        clientID: "{{ .ConfigData.managedIdentityId}}"
+        provider: azure        
         parameters:
+          clientID: "{{ .ConfigData.managedIdentityId}}"
           keyvaultName: "{{ .ConfigData.keyvaultName}}"
           objects: |
             array:
