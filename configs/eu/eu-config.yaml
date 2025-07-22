@@ -24,7 +24,7 @@ data:
               targetKey: username
             - sourcePath: git-hub-token
               targetKey: password
-          - type: Opaque
+          - type: kubernetes.io/dockerconfigjson
             name: acr-secret
             data:
             - sourcePath: acr-secret
