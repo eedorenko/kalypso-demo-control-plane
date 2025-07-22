@@ -24,6 +24,11 @@ data:
               targetKey: username
             - sourcePath: git-hub-token
               targetKey: password
+          - type: Opaque
+            name: acr-secret
+            data:
+            - sourcePath: acr-secret
+              targetKey: .dockerconfigjson
   keyVaultSecrets: |
               - |
                 objectName: application-secret
