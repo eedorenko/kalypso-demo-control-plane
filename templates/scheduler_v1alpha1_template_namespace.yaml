@@ -75,15 +75,14 @@ spec:
           tenantID: "{{ .ConfigData.azureTenantId}}"
     - |
       {{if .ConfigData.secretObjects }}
-      {{$namespace := print .Namespace }}
-      {{$name := print .Workload "-secret-sync" }}
+      {{$namespace := print .Namespace }}      
       {{$serviceAccountName := print .Workload "-sa" }}
       {{$secretProviderClassName := print .Workload "-spc" }}      
       {{range $h := .ConfigData.secretObjects}}
       apiVersion: secret-sync.x-k8s.io/v1alpha1
       kind: SecretSync
       metadata:
-        name: {{ $name }}
+        name: "{{ $h.name}}"
         namespace: {{ $namespace }}
       spec:
         serviceAccountName: "{{ $serviceAccountName }}"
