@@ -13,12 +13,26 @@ data:
   azureTenantId: 16b3c013-d300-468d-ac64-7eda0820b6d3
   secretObjects: |
           - type: Opaque
+            name: application-secret
             data:
             - sourcePath: application-secret
               targetKey: application-secret-value
+          - type: Opaque
+            name: gh-repo-secret
+            data:
+            - sourcePath: git-hub-user
+              targetKey: username
+            - sourcePath: git-hub-token
+              targetKey: password
   keyVaultSecrets: |
               - |
                 objectName: application-secret
+                objectType: secret
+              - |
+                objectName: acr-secret
+                objectType: secret
+              - |
+                objectName: git-hub-token
                 objectType: secret
 
 
